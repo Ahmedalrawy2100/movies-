@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popper", sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #000;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  align-items: center;
+  padding: 10px 200px;
+  border-radius: 40px;
+  margin-top: 5px;
+  position: fixed;
+  z-index: 999;
+}
+.logo {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  color: red;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navigition a {
+  padding-left: 60px;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.navigition a:hover {
+  color: red;
+}
+section {
+  padding: 100px 200px;
+}
+.main {
+  background: url("../image/net.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0% 0% 0% 40%;
+  min-height: 100vh;
+  background-color: blue;
+  background-position: center;
+  width: 100%;
+  opacity: 95%;
+}
+.wrapper {
+  width: 420px;
+  padding: 30px 40px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 2px lightgray;
+  opacity: 110%;
+}
+.wrapper h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  /* text-transform: capitalize; */
+  color: red;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.input-box {
+  position: relative;
+}
+.input-box input {
+  border: 2px solid rgba(255 255 255/10%);
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  padding: 10px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-size: 1.2em;
+}
+.input-box input::placeholder {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+.input-box i {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  color: #fff;
+  font-size: 0.9em;
+}
+.remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  /* text-transform: capitalize; */
+  color: #fff;
+}
+.remember_forgot label input {
+  accent-color: #fff;
+}
+.remember_forgot a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 20px 0 30px;
+}
+.register {
+  text-align: center;
+  color: red;
+  font-size: 1.05em;
+}
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.2em;
+  color: red;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards {
+  background-color: lightgray;
+}
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0px 5px 25px rgba(1 1 1 /50%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.6s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.icon {
+  color: red;
+  font-size: 8em;
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: red;
+  margin: 10px;
+}
+.projects {
+  background-color: #000;
+}
+.projects .content {
+  margin-top: 30px;
+}
+.projects-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.6s ease;
+}
+.projects-card:hover {
+  transform: scale(1.1);
+}
+.projects-card:hover .project-img {
+  opacity: 0.9;
+}
+.project-img img {
+  width: 100%;
+}
+.project-info {
+  padding: 1em;
+}
+.project-info a {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000;
+}
+.call .info h3 {
+  color: #000;
+}
+.contact {
+  padding-bottom: 300px;
+}
+.call {
+  display: flex;
+  justify-content: center;
+}
+.call .info p {
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px;
+}
+footer p {
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+.socail i {
+  font-size: 1.2em;
+  color: #fff;
+  padding-left: 10px;
+}
+footer p span {
+  color: red;
+}
+@media (max-width: 360px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding: 10px 0px 10px 5px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  .logo {
+    font-size: 1em;
+    margin-right: auto;
+  }
+  .navigition {
+    margin-right: auto;
+  }
+}
+@media (min-width: 361px) and (max-width: 540px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  .logo {
+    font-size: 1em;
+    margin-right: auto;
+  }
+  .navigition a {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-right: 0px;
+    padding-left: 10px;
+  }
+  .main {
+    padding: 0% 0% 0% 20%;
+  }
+  .wrapper {
+    width: 250px;
+    padding: 10px 15px;
+  }
+  .wrapper h2 {
+    font-size: 1em;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+  .input-box {
+    position: relative;
+  }
+  .input-box input {
+    font-size: 1em;
+  }
+
+  .input-box i {
+    font-size: 0.7em;
+  }
+  .remember_forgot {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+
+  .remember_forgot a {
+    font-size: 0.9em;
+    padding-top: 4px;
+  }
+  .btn {
+    height: 30px;
+    font-size: 1em;
+    margin: 20px 0 10px;
+  }
+  .register {
+    font-size: 0.8em;
+  }
+  .register p a {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  .projects {
+    padding: 20px 20px 20px 60px;
+  }
+  .projects-card {
+    min-height: auto;
+    width: auto;
+    overflow: hidden;
+    margin: 20px 20px 20px 40px;
+    /* display: flex;
+
+    justify-content: center;
+    align-items: center; */
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50pxpx;
+  }
+  .card {
+    width: 15rem;
+    padding-bottom: 10px;
+  }
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding: 10px 15px 10px 5px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  .logo {
+    font-size: 1.8em;
+  }
+  .navigition a {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .main {
+    padding: 0% 0% 0% 35%;
+  }
+  .wrapper {
+    width: 400px;
+    padding: 10px 15px;
+  }
+  .wrapper h2 {
+    font-size: 3em;
+    font-weight: 600;
+    padding-bottom: 60px;
+  }
+
+  .input-box input {
+    font-size: 1.8em;
+  }
+
+  .input-box i {
+    font-size: 1.1em;
+  }
+  .remember_forgot {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+  .remember_forgot a {
+    font-size: 1.1rem;
+    padding-top: 4px;
+  }
+  .btn {
+    height: 40px;
+    font-size: 1.5rem;
+    margin: 30px 0 0px;
+  }
+  .register {
+    font-size: 0.8em;
+  }
+  .register p a {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+  .projects {
+    padding: 20px 20px 20px 60px;
+  }
+  .projects-card {
+    min-height: auto;
+    width: auto;
+    overflow: hidden;
+    margin: 20px 20px 20px 40px;
+    /* display: flex;
+
+    justify-content: center;
+    align-items: center; */
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50pxpx;
+  }
+  .card {
+    width: 15rem;
+    padding-bottom: 10px;
+  }
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
